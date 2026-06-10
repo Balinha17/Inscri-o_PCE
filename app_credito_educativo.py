@@ -1533,8 +1533,7 @@ with page_col:
                     <span style="color:#5b677a;">Matrícula:</span> {row['matricula']}
                 </p>
                 <p>
-                    <span style="color:#5b677a;">Curso:</span> {row['curso']} &nbsp;&nbsp;
-                    
+                    <span style="color:#5b677a;">Curso:</span> {row['curso']}  &nbsp;&nbsp;
                     <span style="color:#5b677a;">Fiadores:</span> {row['fiadores']}
                 </p>
                 <div class="note-box">
