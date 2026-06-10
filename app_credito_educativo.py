@@ -857,6 +857,119 @@ st.markdown("""
         box-shadow: 0 10px 20px rgba(20,95,227,.22);
     }
 
+
+
+    /* Força visual em modo claro, mesmo se o navegador/Streamlit estiver em dark mode */
+    html,
+    body,
+    .stApp,
+    [data-testid="stAppViewContainer"],
+    [data-testid="stHeader"],
+    [data-testid="stToolbar"],
+    [data-testid="stDecoration"],
+    [data-testid="stSidebar"],
+    [data-testid="stSidebarContent"],
+    .main,
+    .block-container {
+        color-scheme: light !important;
+    }
+
+    .stApp,
+    [data-testid="stAppViewContainer"] {
+        background:
+            radial-gradient(circle at 30% 0%, rgba(64, 125, 255, .08), transparent 35%),
+            linear-gradient(180deg, #fbfdff 0%, #f6f9fd 100%) !important;
+        color: #111827 !important;
+    }
+
+    html,
+    body,
+    p,
+    span,
+    div,
+    label,
+    h1, h2, h3, h4, h5, h6,
+    li,
+    .stMarkdown,
+    .stText,
+    .stCaption {
+        color: #111827;
+    }
+
+    p,
+    li,
+    .page-subtitle,
+    .info-label,
+    .mini-label,
+    .alert-desc {
+        color: #5b677a !important;
+    }
+
+    input,
+    textarea,
+    select,
+    div[data-baseweb="select"] > div,
+    div[data-testid="stTextInput"] input,
+    div[data-testid="stNumberInput"] input,
+    div[data-testid="stTextArea"] textarea {
+        background-color: #ffffff !important;
+        color: #111827 !important;
+        border-color: #d8e4ee !important;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+        color: #7b8798 !important;
+    }
+
+    div[data-baseweb="select"] span,
+    div[data-baseweb="select"] div {
+        color: #111827 !important;
+    }
+
+    div[data-baseweb="popover"],
+    div[data-baseweb="menu"],
+    ul[role="listbox"] {
+        background: #ffffff !important;
+        color: #111827 !important;
+    }
+
+    div[role="option"] {
+        background: #ffffff !important;
+        color: #111827 !important;
+    }
+
+    div[role="option"]:hover,
+    div[aria-selected="true"] {
+        background: #eef4ff !important;
+        color: #111827 !important;
+    }
+
+    .topbar,
+    .metric-card,
+    .dashboard-card,
+    .student-card,
+    .analysis-card,
+    .roadmap-card,
+    .filter-card,
+    .step-card,
+    .timeline-item,
+    div[data-testid="stForm"] {
+        background-color: #ffffff !important;
+        color: #111827 !important;
+    }
+
+    .note-box,
+    .timeline-shell,
+    .hero-status {
+        color: #111827 !important;
+    }
+
+    button,
+    .stButton > button {
+        color-scheme: light !important;
+    }
+
 </style>
 """, unsafe_allow_html=True)
 
