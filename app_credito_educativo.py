@@ -29,6 +29,8 @@ STATUS_FLUXO = [
     "Pendente de ajuste pelo aluno",
     "Aprovado",
     "Reprovado",
+    "Contrato emitido",
+    "Contrato assinado",
 ]
 
 STATUS_ESTEIRA = [
@@ -822,6 +824,12 @@ st.markdown("""
         border: 1px solid #ffd391;
     }
 
+    .tag-desirable {
+        background: #f0eaff;
+        color: #7c4dff;
+        border: 1px solid #d2b8ff;
+    }
+
     .gain-list li {
         margin-bottom: 8px;
     }
@@ -1197,7 +1205,7 @@ with menu_col:
             "🔍 Aluno | Consulta do andamento",
             "👥 Administração | Gestão interna",
             "🏠 Plus | Visão geral da esteira",
-            "🧾 Plus | Análise da solicitação",
+            "🧾 Desejável | Análise da solicitação",
             "📌 Fechamento | Ganhos e desafios",
         ],
         label_visibility="collapsed"
@@ -1558,10 +1566,10 @@ with page_col:
     # ============================================================
     # ANÁLISE DA SOLICITAÇÃO
     # ============================================================
-    elif pagina == "🧾 Plus | Análise da solicitação":
-        st.markdown('<div class="page-title">Plus | Análise da solicitação</div>', unsafe_allow_html=True)
+    elif pagina == "🧾 Desejável | Análise da solicitação":
+        st.markdown('<div class="page-title">Desejável | Análise da solicitação</div>', unsafe_allow_html=True)
         st.markdown('<div class="page-subtitle">Tela de trabalho para analisar dados, documentos, restrições e registrar parecer da solicitação.</div>', unsafe_allow_html=True)
-        st.markdown('<div class="presentation-note">Camada adicional: melhora a experiência do analista e reduz dispersão de documentos, observações e validações.</div>', unsafe_allow_html=True)
+        st.markdown('<div class="presentation-note">Tela desejável: melhora a experiência do analista e reduz dispersão de documentos, observações e validações.</div>', unsafe_allow_html=True)
 
         aluno = st.selectbox(
             "Selecionar aluno para análise",
@@ -1739,13 +1747,13 @@ with page_col:
         p1, p2 = st.columns(2)
         p1.markdown("""
 <div class="roadmap-card">
-    <span class="roadmap-tag tag-plus">Plus</span>
-    <div class="roadmap-title">4. Visão geral da esteira</div>
+    <span class="roadmap-tag tag-desirable">Desejável</span>
+    <div class="roadmap-title">4. Análise da solicitação</div>
     <ul class="gain-list">
-        <li>Painel executivo com volumes por etapa.</li>
-        <li>Acompanhamento de aprovação, pendências e contratos.</li>
-        <li>Ajuda a identificar gargalos operacionais.</li>
-        <li>Pode entrar em fase posterior, sem travar o mínimo viável.</li>
+        <li>Visualização dos dados e documentos em uma tela única.</li>
+        <li>Registro de restrição SPC para aluno e fiador.</li>
+        <li>Separação entre anotação interna e anotação visível ao aluno.</li>
+        <li>Melhora a governança da decisão.</li>
     </ul>
 </div>
 """, unsafe_allow_html=True)
@@ -1753,12 +1761,12 @@ with page_col:
         p2.markdown("""
 <div class="roadmap-card">
     <span class="roadmap-tag tag-plus">Plus</span>
-    <div class="roadmap-title">5. Análise da solicitação</div>
+    <div class="roadmap-title">5. Visão geral da esteira</div>
     <ul class="gain-list">
-        <li>Visualização dos dados e documentos em uma tela única.</li>
-        <li>Registro de restrição SPC para aluno e fiador.</li>
-        <li>Separação entre anotação interna e anotação visível ao aluno.</li>
-        <li>Melhora a governança da decisão.</li>
+        <li>Painel executivo com volumes por etapa.</li>
+        <li>Acompanhamento de aprovação, pendências e contratos.</li>
+        <li>Ajuda a identificar gargalos operacionais.</li>
+        <li>Pode entrar em fase posterior, sem travar o mínimo viável.</li>
     </ul>
 </div>
 """, unsafe_allow_html=True)
