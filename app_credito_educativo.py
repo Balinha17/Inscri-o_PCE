@@ -1784,11 +1784,16 @@ with page_col:
     <div class="roadmap-title">Desafios de implementação</div>
     <ul class="gain-list">
         <li>Garantir armazenamento seguro dos documentos enviados.</li>
-        <li>Separar claramente o que o aluno vê do que é anotação interna.</li>
-        <li>Permitir edição dos dados da ficha do aluno e do fiador quando houver campos equivocados.</li>
-        <li>Importar automaticamente os dados do fiador para o FAFINANC após a aprovação.</li>
-        <li>Identificar no PCE os contratos de adesão emitidos e assinados.</li>
+        <li>Separar claramente o que o aluno visualiza do que é anotação interna da equipe de análise.</li>
+        <li>Permitir edição dos dados do fiador quando houver preenchimento incorreto ou necessidade de atualização durante o processo.</li>
+        <li>Importar automaticamente os dados do aluno a partir da conta institucional PUCRS, reduzindo preenchimento manual e inconsistências cadastrais.</li>
+        <li>Importar automaticamente os dados do fiador para o FAFINANC após a aprovação da solicitação.</li>
+        <li>Identificar no PCE os contratos de adesão emitidos e assinados, disponibilizando essa informação dentro da Gestão Interna.</li>
+        <li>Disponibilizar mecanismo para limpeza/substituição da ficha do fiador quando houver troca de fiador durante a análise da solicitação.</li>
+        <li>Permitir exclusão de documentos armazenados no perfil PUCRS quando não forem mais necessários ao processo (ex.: fiadores que não seguirão na análise).</li>
+        <li>Permitir inclusão de documentos em solicitações já iniciadas, possibilitando que documentos sejam enviados posteriormente durante a análise.</li>
     </ul>
 </div>
 """, unsafe_allow_html=True)
+
 
