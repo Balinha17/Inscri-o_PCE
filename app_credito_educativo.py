@@ -1294,7 +1294,7 @@ with page_col:
                 "Pendentes": [62, 28],
                 "Reprovadas": [23, 8],
             })
-            st.dataframe(resumo, use_container_width=True, hide_index=True)
+            st.dataframe(resumo, width="stretch", hide_index=True)
             st.markdown('<div style="margin-top:14px;color:#145fe3;font-weight:900;">Ver relatório completo ↗</div>', unsafe_allow_html=True)
 
     # ============================================================
@@ -1413,7 +1413,7 @@ with page_col:
                     )
 
             aceite = st.checkbox("Declaro que as informações prestadas são verdadeiras.")
-            enviar = st.form_submit_button("Enviar solicitação", type="primary", use_container_width=True)
+            enviar = st.form_submit_button("Enviar solicitação", type="primary", width="stretch")
 
         if enviar:
             if not aceite:
@@ -1692,7 +1692,7 @@ with page_col:
                 value="Comprovante de rendimentos fora do prazo. Aguardar reenvio para concluir parecer.",
                 height=130
             )
-            st.button("Salvar análise", type="primary", use_container_width=True)
+            st.button("Salvar análise", type="primary", width="stretch")
             st.markdown('</div>', unsafe_allow_html=True)
 
     # ============================================================
@@ -1803,5 +1803,4 @@ with page_col:
     </ul>
 </div>
 """, unsafe_allow_html=True)
-
 
